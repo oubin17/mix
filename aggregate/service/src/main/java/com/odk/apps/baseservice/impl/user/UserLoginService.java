@@ -1,6 +1,5 @@
 package com.odk.apps.baseservice.impl.user;
 
-import cn.dev33.satoken.stp.StpUtil;
 import com.odk.apps.baseapi.inter.user.UserLoginApi;
 import com.odk.apps.basemanager.api.user.IUserLoginManager;
 import com.odk.apps.baseservice.mix.AbstractApiImpl;
@@ -108,7 +107,7 @@ public class UserLoginService extends AbstractApiImpl implements UserLoginApi {
             protected void afterProcess(BaseResponse response) {
                 if (response.isSuccess()) {
                     ServiceResponse<UserLoginResponse> userLoginResponseServiceResponse = (ServiceResponse<UserLoginResponse>) response;
-                    userLoginResponseServiceResponse.getData().setToken(StpUtil.getTokenInfo().getTokenValue());
+                    userLoginResponseServiceResponse.getData().setToken(SessionContext.getToken());
                 }
             }
         });
