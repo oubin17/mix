@@ -45,7 +45,13 @@ public enum BizScene {
 
     VERIFICATION_CODE_COMPARE("VERIFICATION_CODE_COMPARE", "验证码校验"),
 
+    COUNT_DOWN_BOOK_ADD("COUNT_DOWN_BOOK_ADD", "添加倒计时书"),
 
+    COUNT_DOWN_BOOK_LIST("COUNT_DOWN_BOOK_LIST", "倒计时书列表"),
+
+    COUNT_DOWN_DATE_ADD("COUNT_DOWN_DATE_ADD", "添加倒计时日期"),
+
+    COUNT_DOWN_DATE_LIST("COUNT_DOWN_DATE_LIST", "倒计时日期列表"),
 
 
     ;
