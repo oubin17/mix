@@ -19,7 +19,7 @@ import java.io.Serial;
 @Data
 @Entity
 @Table(name = "t_countdown_date", indexes = {
-        @Index(name = "idx_book_id", columnList = "book_id,tenant_id", unique = true)
+        @Index(name = "idx_book_id", columnList = "book_id,tenant_id")
 })
 @EntityListeners(AuditingEntityListener.class)
 public class CountDownDateDO extends BaseDO {
